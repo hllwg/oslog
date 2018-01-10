@@ -1,0 +1,5 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="GenerateNativeLibrary" BeforeTargets="_GenerateBindings" Inputs="Native/Logger.h;Native/Logger.m" Outputs="$(OutDir)oslog.dylib">
+        <Exec Command="clang -arch x86_64 -dynamiclib -fobjc-arc -fobjc-link-runtime -std=gnu99 Native/Logger.m -current_version 1.0 -compatibility_version 1.0 -framework Cocoa -o $(OutDir)oslog.dylib" />
+    </Target>
+</Project>
