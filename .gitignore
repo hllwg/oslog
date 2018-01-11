@@ -1,2 +1,6 @@
 
 oslog.userprefs
+
+packages/
+obj/
+bin/
