@@ -7,9 +7,9 @@ namespace oslog
 	interface Logger
 	{
 		[Export("initWithSubsystemAndCategory:category:")]
-		IntPtr Constructor(string subsystem, string category);
+		IntPtr Constructor([PlainString] string subsystem, [PlainString] string category);
 
 		[Export("Log:message:")]
-		void Log(LogType type, [PlainString] string msg);
+		void Log(LogType type,[PlainString] string msg);
 	}
 }
