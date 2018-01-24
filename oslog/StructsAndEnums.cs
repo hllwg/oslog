@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace oslog
+namespace OSLog
 {
 	public enum LogType : byte
 	{

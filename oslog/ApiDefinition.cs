@@ -1,7 +1,7 @@
 ﻿using System;
 using Foundation;
 
-namespace oslog
+namespace OSLog
 {
 	[BaseType(typeof(NSObject))]
 	interface Logger
