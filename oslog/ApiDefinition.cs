@@ -11,5 +11,8 @@ namespace OSLog
 
 		[Export("Log:message:")]
 		void Log(LogType type,[PlainString] string msg);
+
+		[Export("IsEnabled:")]
+		bool IsEnabled(LogType type);
 	}
 }

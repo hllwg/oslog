@@ -27,4 +27,9 @@
     os_log_with_type(_os_log, type, "%{public}s", msg);
 }
 
+- (bool) IsEnabled:(os_log_type_t)type;
+{
+    return os_log_type_enabled(_os_log, type);
+}
+
 @end
